@@ -7,19 +7,13 @@
 .contact_container {
   width: 80%;
   margin: auto;
-  padding: 50px 15px;
-  display: flex;
+  margin-bottom: 50px;
 }
-.contact_info,
-.question_left {
-  width: 40%;
+.contact .row,
+.question .row {
+  flex-wrap: wrap;
 }
-.contact_info h3 {
-}
-.contact_map,
-.question_right {
-  width: 60%;
-}
+
 .contact_item {
   display: flex !important;
 }
@@ -92,9 +86,7 @@ h2.title::after {
   object-fit: cover;
   border-radius: 5px;
 }
-.question_left {
-  margin-right: 30px;
-}
+
 .question_right form {
   display: flex;
   flex-direction: column;
@@ -103,6 +95,7 @@ h2.title::after {
 }
 .question_right input,
 .question_right textarea {
+  width: 100%;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
@@ -113,7 +106,7 @@ h2.title::after {
   color: #fff;
   margin-top: 30px;
   padding: 14px 20px;
-  width: 30%;
+  width: 200px;
   cursor: pointer !important;
-  font-size: 18px;
+  font-size: 1rem;
 }
